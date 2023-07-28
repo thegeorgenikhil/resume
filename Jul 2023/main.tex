@@ -1,0 +1,186 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,calibri]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}  
+
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[left=0.75in,right=0.75in,top=0.60in,bottom=0.60in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{import}
+\usepackage{enumitem}
+\usepackage{url}
+\AfterPreamble{
+	\hypersetup{
+		pdfauthor={...},
+		pdftitle={...},
+		pdfsubject={...},
+		urlcolor=blue,
+	}
+}
+
+%\hypersetup{linkcolor=blue}
+% \renewcommand{\baselinestretch}{0.5}
+
+% personal data
+\name{Nikhil}{George \vspace{0.2cm} \href[pdfnewwindow=true]{https://www.linkedin.com/in/nikhil-george-8b8236214/}{\faIcon{linkedin}}}
+
+\email{thegeorgenikhil@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{nikhilgeorge.in}  \\                        % optional, remove / comment the line if not wanted
+\phone[mobile]{+91 9207695787}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\extrainfo{\href[pdfnewwindow=true]{https://www.github.com/thegeorgenikhil}{\faIcon{github} @thegeorgenikhil}}
+% optional, remove / comment the line if not wanted
+%\photo[62pt][0.2pt]{picture}                       % optional, remove / comment the line if not wanted; '62pt' is the height the picture must be resized to, 0.2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+	%-----       resume       ---------------------------------------------------------
+	\makecvtitle
+	\vspace{-35pt}
+
+	\small
+	\renewcommand\UrlFont{\color{blue}\rmfamily}
+	
+	\section{Education}
+	
+		\setlength\itemsep{.2em}
+		\cventry{June 2021- June 2025}{}{Kalinga Institute of Industrial Technology}{\textmd\textbf{{Bhubaneswar, India}}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\vspace{-10pt}
+   \textit{Bachelor of Technology(B.Tech) in Computer Science and Engineering - CGPA: 8.14}}
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%   Experience & Internships
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\vspace{-15pt}
+ 
+	\section{Experience}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		\vspace{-1pt}
+  
+            \cventry{May 2023 - July 2023}{\href{https://www.armur.ai/}{Armur.ai}}{Backend Engineering Intern(Remote)}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+                 \item Developed a \textbf{POC} for a \textbf{security audit tool} using \textbf{Go}, \textbf{React} and \textbf{MongoDB} which later got developed into one of company's primary product offering.
+                \item Features included integrating with \textbf{OpenAI API} for vulnerability detection along with \textbf{authentication}, \textbf{S3 buckets for file uploads}, and \textbf{PDF generation} of vulnerability reports along with \textbf{dockerizing} the entire app for \textbf{easy deployment}.
+                \item Collaborated with the core product team to \textbf{design} and \textbf{implement} additional APIs required for enhanced functionality and user experience.
+                \item Implemented \textbf{API Key functionality} to allow customers to use the core product's services \textbf{solely through API endpoints} without relying on the web application.
+                \item Developed a \textbf{CLI tool} in Go to enable customers to \textbf{interact} with the product's API conveniently from the command line.
+		}
+	\vspace{2pt}
+  
+  
+		\cventry{November 2022 - April 2023}{\href{https://www.youtube.com/@AkhilSharmaTech/videos}{Akhil Sharma - Youtube Channel}}{Technical Intern(Remote)}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\item \textbf{Ideated}, \textbf{built} and \textbf{documented} full-stack/backend projects on various technologies to be used for tutorial videos.
+		}
+	\end{itemize}
+
+	
+	\section{Projects}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+
+        \cventry{Mar 2023}{Embed PDFs and query them using natural language}{{{docsGPT} \textnormal{\textit{\href{https://github.com/thegeorgenikhil/docsGPT}{Github}}}}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Web app with powerful document querying capabilities, leveraging OpenAI's Embedding API and Vector database, allowing users to query them later on using natural language and get back relevant results.
+                \item Uses Go for backend and MongoDB for storing the contents.
+			\vspace{-3pt}
+		}
+  
+  
+        \cventry{May 2022}{Play quizzes based on your favourite programming languages}{{\href{https://quizz-up.netlify.app/}{QuizzUp} \textnormal{\textit{\href{https://github.com/thegeorgenikhil/quizz-up-frontend}{Github}}}}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item A quiz app with functionalities like user authentication, taking quizzes, and a leaderboard.
+			% \item React, NodeJS, MongoDB, Typescript, Redux(RTK)
+			\vspace{-3pt}
+		}
+        \cventry{April 2022}{A clone based on Google Keep with mock backend}{{\href{https://keep-react.netlify.app/}{Keep Clone} \textnormal{\textit{\href[pdfnewwindow=true]{https://github.com/thegeorgenikhil/keep-clone}{Github}}}}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Developed a clone of Google Keep, including features such as authentication, creating, editing, and deleting notes, adding labels, and searching.
+			\vspace{-3pt}
+		}
+		
+	\end{itemize}
+ 
+	\section{Skills}
+	
+	\begin{itemize}[leftmargin=.2in]
+		\setlength\itemsep{.2em}
+		
+		\item \textbf{Programming Languages:} C/C++, Java, Javascript, Golang, Python
+		\vspace{-4pt}
+		\item \textbf{Development:} React, Next.js, GraphQL, NodeJS, Typescript, TailwindCSS
+		\vspace{-4pt}
+		\item \textbf{Databases:} MongoDB, MySQL, PostgreSQL
+		\vspace{-4pt}
+		\item \textbf{Others:} Git, Stripe, Bash, Docker, AWS(S3), \LaTeX	 
+		
+	\end{itemize}
+
+	\subsection{Achievements and Extracurriculars}
+	
+	\begin{itemize}
+		\item \href[pdfnewwindow=true]{https://twitter.com/parthpandyappp/status/1529926483010936832}{\textbf{Finalist}} at HackNeoG Hackathon, organized by {\href[pdfnewwindow=true]{https://neog.camp/}{\textbf{neogCamp}} \textit{(Top 9 out of 34 Teams)}}
+		\vspace{-4pt}
+            \item Member of the core organising team of GDSC KIIT's \href[pdfnewwindow=true]{https://devsprint.dsckiit.in/}{\textbf{DevSprint22 Hackathon}} with over \textbf{200+} participants.
+	\end{itemize}
+		
+	
+	
+	\vfill
+	\textnormal{\footnotesize Last Updated on \today. Hyperlinks at appropriate places}
+	
+	% Publications from a BibTeX file without multibib
+	%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%	\nocite{*}
+%	\bibliographystyle{plain}
+%	\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	
+	% Publications from a BibTeX file using the multibib package
+	%\section{Publications}
+	%\nocitebook{book1,book2}
+	%\bibliographystylebook{plain}
+	%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+	%\nocitemisc{misc1,misc2,misc3}
+	%\bibliographystylemisc{plain}
+	%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+	
+	%-----       letter       ---------------------------------------------------------
+	
+\end{document}
+
+
+%% end of file `template.tex'.

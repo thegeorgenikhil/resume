@@ -1,0 +1,186 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{url}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{hyperref}
+    \usepackage{textcomp}
+    \usepackage{fontawesome5}
+    \usepackage{fontawesome}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+% \renewcommand\labelitemi{---}
+
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge  \textbf{Nikhil George}}\\
+ 	\faIcon{envelope} thegeorgenikhil@gmail.com $\cdot$ \href[pdfnewwindow=true]{https://www.github.com/thegeorgenikhil}{\faIcon{github} Github}
+ $\cdot$ \href[pdfnewwindow=true]{https://www.linkedin.com/in/thegeorgenikhil}{\faIcon{linkedin} LinkedIn}
+ \\
+\end{center}
+
+
+\header{\large{Projects}}
+\vspace*{3mm}
+
+% PROJECT 1
+% ==============Project Heading with Link
+\href[pdfnewwindow=true]{https://www.kryptolinks.xyz/}{\textbf{KryptoLinks} \faExternalLink} 
+% ==============Project Github Link
+\hspace*{0.1mm} \href[pdfnewwindow=true]{https://github.com/thegeorgenikhil/kryptolinks.xyz}{\textit{\underline{Github}}} 
+% ==============Project Tech Stack
+\hfill {\sl React, NodeJS, TailwindCSS, Ethers.js}
+% ==============Project Description
+\begin{itemize}
+    \setlength\itemsep{0.01em}
+Created a clone of bio.link using React, Tailwind, Node and MongoDB. Users can create profile links with their details and share them. They can add their Ethereum addresses to allow payments through the link. Implemented authentication of users by verifying their signatures on the backend.
+
+\end{itemize}
+
+% PROJECT 2 
+% ==============Project Heading with Link
+\href[pdfnewwindow=true]{https://keep-react.netlify.app/}{\textbf{Keep Clone} \faExternalLink} 
+% ==============Project Github Link
+\hspace*{0.1mm} \href[pdfnewwindow=true]{https://github.com/thegeorgenikhil/keep-clone}{\textit{\underline{Github}}} 
+% ==============Project Tech Stack
+\hfill {\sl React, Redux, TipTap, Typescript}
+% ==============Project Description
+\begin{itemize}
+    \setlength\itemsep{0.01em}
+    Created a clone of Google Keep. Users can create notes, edit notes, delete notes, add labels to notes, and search for notes. Authentication has also been implemented. The app uses a mock backend to store and retrieve data.
+\end{itemize}
+
+% PROJECT 3
+% ==============Project Heading with Link
+\href[pdfnewwindow=true]{https://quizz-up.netlify.app/}{\textbf{QuizzUp} \faExternalLink} 
+% ==============Project Github Link
+\hspace*{0.1mm} \href[pdfnewwindow=true]{https://github.com/thegeorgenikhil/quizz-up-frontend}{\textit{\underline{Github}}} 
+% ==============Project Tech Stack
+\hfill {\sl React, Redux, Typescript, NodeJS, MongoDB}
+% ==============Project Description
+\begin{itemize}
+    \setlength\itemsep{0.01em}
+    QuizzUp is a web application that allows you to play quizzes and based on your favourite programming languages. Made using React and Node.js. It has all the functionalities like authentication, taking quizzes, leaderboard, etc.
+\end{itemize}
+
+% PROJECT 4
+% ==============Project Heading with Link
+\href[pdfnewwindow=true]{https://flow-vid.netlify.app/}{\textbf{flow.vid} \faExternalLink} 
+% ==============Project Github Link
+\hspace*{0.1mm} \href[pdfnewwindow=true]{https://github.com/thegeorgenikhil/flow.vid}{\textit{\underline{Github}}} 
+% ==============Project Tech Stack
+\hfill {\sl React, React Player, MockBee}
+% ==============Project Description
+\begin{itemize}
+    \setlength\itemsep{0.01em}
+    A video library made with React.js and Mock Backend along with all the functionalities like Watch Later, History, Playlist Management, Likes and Filtering.
+\end{itemize}
+
+% PROJECT 5
+% ==============Project Heading with Link
+\href[pdfnewwindow=true]{https://gamesandbox.netlify.app/}{\textbf{GameSandbox} \faExternalLink} 
+% ==============Project Github Link
+\hspace*{0.1mm} \href[pdfnewwindow=true]{https://github.com/thegeorgenikhil/gamesandbox-ecomm-react}{\textit{\underline{Github}}} 
+% ==============Project Tech Stack
+\hfill {\sl React, MockBee}
+% ==============Project Description
+\begin{itemize}
+    \setlength\itemsep{0.01em}
+    Created a simple e-commerce site using React with all the functionalities like cart and wishlist management.
+\end{itemize}
+
+\vspace*{2mm}
+
+\header{\large{Skills}}
+\vspace*{2mm}
+\begin{tabular}{ l l }
+	\textbf{Programming Langugages}: & C/C++, Javascript, Python, Typescript \\
+	\textbf{Development}:            & React, Next.js, GraphQL, NodeJS       \\
+	\textbf{Databases}:              & MongoDB, MySQL                        \\
+	\textbf{Others}:                 & Git, Linux, Bash, Docker, Firebase    \\
+\end{tabular}
+\vspace{2mm}
+
+%==== Education ====%
+\header{\large{Achievement}} 
+\begin{itemize}
+  \item \textbf{Finalist} at hackneoG hackathon organized by \href[pdfnewwindow=true]{https://twitter.com/parthpandyappp/status/1529926483010936832}{\textbf{neogCamp}} \textit{(Top 9 out of 34 Teams)}
+\end{itemize}
+% \vspace{2mm}
+
+%==== Education ====%
+\header{\large{Education}}
+\textbf{Kalinga Institute of Industrial Technology}\hfill \textbf{GPA: 8.72}\\
+Bachelor of Technology(B.Tech) in \textit{Computer Science and Engineering}  \hfill Sep 2021 - Sep 2025\\
+\vspace{2mm}
+
+
+
+\ 
+\end{document}
