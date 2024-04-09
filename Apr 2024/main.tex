@@ -1,0 +1,191 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,calibri]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}  
+
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[left=0.75in,right=0.75in,top=0.60in,bottom=0.30in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{import}
+\usepackage{enumitem}
+\usepackage{url}
+\AfterPreamble{
+	\hypersetup{
+		pdfauthor={...},
+		pdftitle={...},
+		pdfsubject={...},
+		urlcolor=blue,
+	}
+}
+
+%\hypersetup{linkcolor=blue}
+% \renewcommand{\baselinestretch}{0.5}
+
+% personal data
+\name{Nikhil}{George \vspace{0.2cm} \href[pdfnewwindow=true]{https://www.linkedin.com/in/nikhil-george-8b8236214/}{\faIcon{linkedin}}}
+
+\email{thegeorgenikhil@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{nikhilgeorge.in}  \\                        % optional, remove / comment the line if not wanted
+\phone[mobile]{+91 9207695787}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\extrainfo{\href[pdfnewwindow=true]{https://www.github.com/thegeorgenikhil}{\faIcon{github} @thegeorgenikhil}}
+% optional, remove / comment the line if not wanted
+%\photo[62pt][0.2pt]{picture}                       % optional, remove / comment the line if not wanted; '62pt' is the height the picture must be resized to, 0.2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+	%-----       resume       ---------------------------------------------------------
+	\makecvtitle
+	\vspace{-35pt}
+
+	\small
+	\renewcommand\UrlFont{\color{blue}\rmfamily}
+	
+	\section{Education}
+	
+		\setlength\itemsep{.2em}
+		\cventry{June 2021- June 2025}{}{Kalinga Institute of Industrial Technology}{\textmd\textbf{{Bhubaneswar, India}}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\vspace{-10pt}
+   \textit{Bachelor of Technology(B.Tech) in Computer Science and Engineering - CGPA: 8.12}}
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%   Experience & Internships
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\vspace{-15pt}
+ 
+	\section{Experience}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		\vspace{-1pt}
+  
+            \cventry{May 2023 - July 2023}{\href{https://www.armur.ai/}{\underline{Armur.ai}}}{Backend Engineering Intern(Remote)}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+                 \item Developed a \textbf{POC} for a security audit tool using \textbf{Go}, \textbf{React}, and \textbf{MongoDB}, which later evolved\\ into one of the company's \textbf{core offering}.
+                 \item Spearheaded \textbf{API integration} for the product, empowering customers to \textbf{scan} smart contracts \textbf{directly} through \textbf{endpoints} programmatically.
+                \item Integrated \textbf{OpenAI API} for vulnerability detection in smart contracts.
+                \item Leveraged \textbf{S3} for efficient file uploads and enabled \textbf{PDF generation} of vulnerability reports, while also \textbf{Dockerizing} the entire application for streamlined deployment.
+                \item Collaborated with the product team to \textbf{design} and \textbf{implement} additional APIs required for enhanced functionality and user experience.
+		}
+	\vspace{2pt}
+  
+  
+		%\cventry{November 2022 - April 2023}{\href{https://www.youtube.com/@AkhilSharmaTech/videos}{Akhil Sharma - Youtube Channel}}{Technical Intern(Remote)}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+		%	\item \textbf{Ideated}, \textbf{built} and \textbf{documented} full-stack/backend projects on various technologies to be used for tutorial videos.
+		}
+	\end{itemize}
+
+	
+	\section{Projects}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+
+         \cventry{January 2024}{A self-deployable course platform, catering to single instructors selling courses online.}{{{CourseCraft} \textnormal{\textit{\href{https://gitlab.com/thegeorgenikhil/course-platform/}{\underline{Gitlab}}}}}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Designed scalable \textbf{microservices} using \textbf{gRPC} for optimized communication.
+                \item Implemented \textbf{course management}, \textbf{enrollment}/\textbf{purchasing}, secure authentication, and \textbf{video delivery}.
+                \item Orchestrated an \textbf{event-driven architecture} using \textbf{RabbitMQ} for sending emails.
+                \item Developed responsive frontend interfaces for both instructors and students using \textbf{SvelteKit}, ensuring \\ optimal user experience.
+		}		
+
+        \cventry{March 2024}{A form collection service created with scalability in mind, uses \textbf{event-driven architecture}.}{{{Collect} \textnormal{\textit{\href{https://georgenikhil.notion.site/Design-Specification-Document-1006cf9397e740bbbd6bbb4eb0ad2790}{\underline{Github}}}}}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Empowered users to build \textbf{complex}, \textbf{dynamic} forms with ease, streamlining \textbf{data collection} process.
+                \item Designed a \textbf{scalable}, \textbf{real-time} data collection pipeline using \textbf{Go} services, \textbf{Kafka}, and \textbf{PostgreSQL} for efficient processing and storage.
+                \item Enhanced availability and fault tolerance with \textbf{replication} and \textbf{consumer retry strategies}.
+                \item Incorporated \textbf{Google Sheets} and \textbf{Twilio} integrations for added functionality.
+		}
+  
+  \cventry{April 2024}{A serverless video transcoding service using AWS.}{{{Video Transcoding Service} \textnormal{\textit{\href{https://github.com/thegeorgenikhil/video-transcoding-service}{\underline{Github}}}}}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+                \item Built a \textbf{highly available}, \textbf{serverless} video transcoding service on \textbf{AWS}, delivering \textbf{scalability} and \textbf{unmatched cost-efficiency.}
+                \item Achieved a remarkable \textbf{700\% reduction in costs}, compared to existing market solutions.
+                \item Uses \textit{\textbf{S3, Lambda, ECS, API Gateway, EventBridge, DynamoDB}}.
+		}		
+	\end{itemize}
+        
+	\section{Skills}
+	
+	\begin{itemize}[leftmargin=.2in]
+		\setlength\itemsep{.2em}
+		
+		\item \textbf{Programming Languages:} C/C++, Java, Javascript, Go, Python
+            \vspace{-4pt}
+		\item \textbf{Backend:} NodeJS, RabbitMQ, Kafka, Websocket, GraphQL, gRPC, AWS, Docker
+		\vspace{-4pt}
+		\item \textbf{Frontend:} React, Svelte, Redux, Typescript, Next.js, SvelteKit
+		\vspace{-4pt}
+		\item \textbf{Databases:} PostgreSQL, MongoDB, MySQL, Redis
+		\vspace{-4pt}
+		\item \textbf{Others:} Git, Bash, Linux, Microservices
+            
+		
+	\end{itemize}
+
+	\subsection{Achievements and Extracurriculars}
+	
+	\begin{itemize}
+		\item \href[pdfnewwindow=true]{https://twitter.com/parthpandyappp/status/1529926483010936832}{\textbf{\underline{Finalist}}} at HackNeoG Hackathon, organized by {\href[pdfnewwindow=true]{https://neog.camp/}{\textbf{\underline{neogCamp}}} \textit{(Top 9 out of 34 Teams)}}
+		\vspace{-4pt}
+            \item Member of the core organising team of GDSC KIIT's \href[pdfnewwindow=true]{https://devsprint.dsckiit.in/}{\textbf{\underline{DevSprint22 Hackathon}}} with over \textbf{200+} participants.
+	\end{itemize}
+		
+	
+	
+	\vfill
+	\textnormal{\footnotesize Last Updated on \today. Hyperlinks are \underline{underlined}}
+	
+	% Publications from a BibTeX file without multibib
+	%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%	\nocite{*}
+%	\bibliographystyle{plain}
+%	\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	
+	% Publications from a BibTeX file using the multibib package
+	%\section{Publications}
+	%\nocitebook{book1,book2}
+	%\bibliographystylebook{plain}
+	%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+	%\nocitemisc{misc1,misc2,misc3}
+	%\bibliographystylemisc{plain}
+	%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+	
+	%-----       letter       ---------------------------------------------------------
+	
+\end{document}
+
+
+%% end of file `template.tex'.
